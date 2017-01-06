@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+
+	<title>Conways Game Of Life</title>
+
+</head>
+<body>
+
+	<center>
+		<div id="board"></div>
+	</center>
+
+	<script type="text/javascript" src="assets/js/build/script.js"></script>
+
+	<script type="text/javascript">
+		var height 	= 10,
+			width	= 10,
+			element = $('#board');
+
+		var board = new Board(element, width, height);
+	</script>
+
+</body>
+</html>

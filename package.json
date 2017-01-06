@@ -1,0 +1,21 @@
+{
+  "name": "gameoflife-danny",
+  "version": "1.0.0",
+  "description": "Conway's Game Of Live",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gameoflife",
+    "dojo"
+  ],
+  "author": "Savio & Danny",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {}
+}

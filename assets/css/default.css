@@ -1,0 +1,35 @@
+
+/* ################################ GENERIC ################################ */
+
+body, *{
+	padding: 0px;
+	margin: 0px;
+}
+
+.cleaner{
+	clear: both;
+}
+
+/* ################################ / GENERIC ################################ */
+
+/* ################################ BOARD ################################ */
+
+#board{
+	border: 1px solid #000;
+	margin: 0 auto;
+	margin-top:10px;
+	display: inline-block;
+}
+
+#board .line{
+	height: 10px;
+	width: 100%;
+}
+
+#board .line .column{
+	width: 10px;
+	height: 10px;
+	float: left;
+}
+
+/* ################################ / BOARD ################################ */
