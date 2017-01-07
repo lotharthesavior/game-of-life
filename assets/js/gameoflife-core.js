@@ -8,6 +8,9 @@
  */
 var Board = function(element, width, height){
 
+	// clean board
+	$('#board').html('');
+
 	var BoardMethods = {};
 
 	BoardMethods.grid = [];
@@ -32,15 +35,15 @@ var Board = function(element, width, height){
 		// loop into the lines
 		BoardMethods.grid.forEach(function(element, index){
 			var newElement = document.createElement("div");
-			newElement.classList.add('lines');
-			$('#board').append(newElement);
+			newElement.classList.add('line');
 
 			BoardMethods.grid[index].forEach(function(element2, index2){
-				var newElement = document.createElement("div");
-				newElement.classList.add('columns');
-				$('#board').append(newElement);
+				var newElement2 = document.createElement("div");
+				newElement2.classList.add('column');
+				$(newElement).append(newElement2);
 			});
 
+			$('#board').append(newElement);
 		});
 	}
 

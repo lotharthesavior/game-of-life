@@ -13,8 +13,10 @@ describe("Game Of Life", function() {
   });
 
   it("After instantiate Board, create abstract Grid in the specific tag element.", function(){
-    expect($('#board').find('.lines').length).toEqual(10);
-    expect($($('#board').find('.lines')[0]).find('.columns').length).toEqual(10);
+    console.log($('#board').find('.line').length);
+
+    expect($('#board').find('.line').length).toEqual(10);
+    expect($($('#board').find('.line')[0]).find('.column').length).toEqual(10);
   });
 
   it("getNeighbours must return the real number of cell neighbours.", function(){
