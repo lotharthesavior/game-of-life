@@ -9,9 +9,29 @@
 </head>
 <body>
 
-	<center>
-		<div id="board"></div>
-	</center>
+	<div id="controls">
+		<div class="center">
+			<div class="controls-cols">
+				<a class="control start" onclick="board.start();">Start!</a><br/>
+			</div>
+			<div class="controls-cols">
+				<a class="control pause" onclick="if(flag == true){flag=false;$(this).html('Unpause!');}else{flag=true;$(this).html('Pause!');}">Pause!</a><br/>
+			</div>
+			<div class="controls-cols">
+				<a class="control next" onclick="board.updateGrid()">Next!</a><br/>
+			</div>
+			<div class="controls-cols">
+				<a class="control next" onclick="board.generateRandomCells()">Random</a><br/>
+			</div>
+			<div class="cleaner">&nbsp;</div>
+		</div>
+	</div>
+
+	<div>
+		<center>
+			<div id="board"></div>
+		</center>
+	</div>
 
 	<script type="text/javascript" src="assets/js/build/script.js"></script>
 
@@ -21,6 +41,26 @@
 			element = $('#board');
 
 		var board = new Board(element, width, height);
+
+		var flag = true;
+
+		$(document).ready(function(){
+
+			$('.column').on('click',function(){
+				var that = this;
+				$(that).toggleClass('live');
+
+				// update abstract grid
+				var position = $('.column').index(that);
+				var place = String(position / width).split('.');
+				if(place.length < 2){
+					place[1] = "0";
+				}
+				board.grid2[parseInt(place[0])][parseInt(place[1])] = $(that).hasClass('live');
+				board.updateGridOne();
+			});
+
+		});
 	</script>
 
 </body>

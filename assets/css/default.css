@@ -10,7 +10,36 @@ body, *{
 	clear: both;
 }
 
+a{
+	cursor: pointer;
+}
+
 /* ################################ / GENERIC ################################ */
+
+/* ################################ CONTROLS ################################ */
+
+#controls{
+	width: 100%;
+}
+
+#controls .center{
+	width: 450px;
+	margin: 0 auto;
+}
+
+#controls .center .controls-cols{
+	float: left;
+}
+
+.control{
+	border: 1px solid #000;
+	background-color: blue;
+	color: #fff;
+	padding: 10px 30px;
+	height: 50px;
+}
+
+/* ################################ / CONTROLS ################################ */
 
 /* ################################ BOARD ################################ */
 
@@ -22,15 +51,19 @@ body, *{
 }
 
 #board .line{
-	height: 10px;
+	height: 20px;
 	width: 100%;
 }
 
 #board .line .column{
 	border: 1px solid #000;
-	width: 10px;
-	height: 10px;
+	width: 20px;
+	height: 20px;
 	float: left;
+}
+
+.live{
+	background-color: #000;
 }
 
 /* ################################ / BOARD ################################ */
