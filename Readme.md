@@ -6,6 +6,8 @@ This DOJO is the Conways Game of Life.
 
 **Demo:** https://lotharthesavior.github.io/game-of-life/
 
+**Tests:** https://lotharthesavior.github.io/game-of-life/tests/jasmine/SpecRunner.html
+
 **Reference:** https://en.wikipedia.org/wiki/Conway's_Game_of_Life
 
 **License:** MIT
