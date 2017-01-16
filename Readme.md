@@ -1,8 +1,8 @@
-# Programming Class - GameOfLife
+# Conway's Game of Life
 ##### Author: Savio Resende <savio@savioresende.com.br>
 ##### Website: savioresende.com.br
 
-This is a DOJO is a programming class. This DOJO is the Conways Game Of Life.
+This DOJO is the Conways Game of Life.
 
 **Reference:** https://en.wikipedia.org/wiki/Conway's_Game_of_Life
 
